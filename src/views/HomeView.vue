@@ -1,18 +1,22 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <h1>首页</h1>
+    <el-button type="warning">警告按钮</el-button>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
 
 export default {
   name: 'HomeView',
-  components: {
-    HelloWorld
-  }
+  data() {
+    return {}
+  },
+  // created() {
+    // this.$axios.get('http://127.0.0.1:8000/test/').then(res => {
+    //   console.log('res')
+    // })
+    // this.$cookies.set('name', 'xxx')
+  // }
 }
 </script>
